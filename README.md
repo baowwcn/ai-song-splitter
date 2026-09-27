@@ -4,7 +4,7 @@
 支持人声分离(BSRoformer / demucs)、**歌词驱动分段**(LRC 或纯文本)、在线试听、微调切点、单段/整包下载。
 音频全程在本机处理,不上传任何服务器。
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue) ![Flask](https://img.shields.io/badge/Flask-3.x-green) ![Models](https://img.shields.io/badge/models-BSRoformer%20%2F%20Qwen3-ASR%20%2F%20FunASR-orange)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue) ![Flask](https://img.shields.io/badge/Flask-3.x-green) ![Models](https://img.shields.io/badge/models-BSRoformer%20%2F%20Qwen3-ASR%20%2F%20FunASR-orange) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ---
 
@@ -21,6 +21,7 @@
 - [HTTP 接口](#http-接口)
 - [环境变量](#环境变量)
 - [常见问题与坑](#常见问题与坑)
+- [许可](#许可)
 
 ---
 
@@ -350,3 +351,20 @@ ai-song-splitter/
 - FunASR:https://github.com/modelscope/FunASR
 - openai/whisper:https://github.com/openai/whisper
 - demucs:https://github.com/adefossez/demucs
+
+---
+
+## 许可
+
+本项目代码以 [MIT](LICENSE) 许可发布(Copyright (c) 2026 baowwcn),可自由商用、修改、再分发。
+
+依赖与模型各自遵循原始许可,本仓库不分发任何权重或第三方二进制:
+
+| 组件 | 许可 |
+|---|---|
+| PyTorch / Flask / pydub | BSD-3-Clause |
+| demucs / openai-whisper / FunASR | MIT |
+| pymss | MIT |
+| Qwen3-ASR / Qwen3-ForcedAligner | Apache-2.0 |
+| BSRoformer(`bs_roformer_voc_hyperacev2`) | 以模型库 `baicai1145/pymss` 页面标注为准 |
+| ffmpeg | 依所下构建而定(essentials build 为 LGPL/GPL),请自行遵守其许可 |
