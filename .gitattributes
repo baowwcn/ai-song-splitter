@@ -1,0 +1,18 @@
+# 文本统一按 LF 入库,避免多人/多机协作时整文件 diff
+* text=auto eol=lf
+
+# Windows 批处理必须是 CRLF
+*.bat text eol=crlf
+
+# 二进制/大文件
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.wav binary
+*.mp3 binary
+*.flac binary
+*.pt binary
+*.ckpt binary
+*.safetensors binary
+*.zip binary

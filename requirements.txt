@@ -1,0 +1,13 @@
+flask
+pydub
+audioop-lts
+numpy
+demucs
+pymss
+funasr
+kaldi-native-fbank
+openai-whisper
+opencc-python-reimplemented
+# CUDA 版 torch(有 NVIDIA GPU 时,从 pytorch cu126 源安装):
+#   runtime\python\python.exe -m pip install --index-url https://download.pytorch.org/whl/cu126 torch==2.14.0+cu126
+torch
